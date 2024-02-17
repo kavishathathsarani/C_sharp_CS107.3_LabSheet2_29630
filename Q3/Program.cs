@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Q3
 {
-    internal class TemperatureTracker
+    internal class Program
     {
         static void Main(string[] args)
         {
             TemperatureTracker tracker = new TemperatureTracker();
-
             tracker.DailyTemperature();
-            Console.WriteLine("\n");
             tracker.Report();
+
+            
 
             Console.ReadLine();
         }

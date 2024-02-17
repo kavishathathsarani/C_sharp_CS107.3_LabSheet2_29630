@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Q3
 {
-    internal class TemperatureTrackers
+    internal class TemperatureTracker
     {
         public double[] Temperature = new double[7];
         public void DailyTemperature()
@@ -21,10 +21,10 @@ namespace Q3
 
         public void Report()
         {
-            Console.WriteLine("Weekly Temperature Renort ");
+            Console.WriteLine("Weekly Temperature Report ");
             for (int i = 0; i < 7; i++)
             {
-                Console.WriteLine($"Day {i + 1}: {Temperature[1]}°C");
+                Console.WriteLine($"Day {i + 1}: {Temperature[i]}°C");
             }
         }
     }
